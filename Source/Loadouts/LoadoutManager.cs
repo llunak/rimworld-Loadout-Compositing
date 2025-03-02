@@ -126,9 +126,6 @@ namespace Inventory {
         
         public override void FinalizeInit() {
             instance = this;
-
-            // Ugly workaround detailed on the type itself.
-            BetterPawnControl_EmergencyToggle_Patch.TryPatch(ModBase.harmony);
         }
 
         public override void ExposeData() {
